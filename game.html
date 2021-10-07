@@ -1,0 +1,65 @@
+﻿<HTML>
+<HEAD>
+<TITLE>ХУЄТРИС</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH,USER-SCALABLE=NO">
+<LINK REL="stylesheet" TYPE="text/css" HREF="style/game.css">
+</HEAD>
+<BODY STYLE="background-color:#888888" oncontextmenu = "return false">
+<NOSCRIPT>
+    <H1>Для игры "ХУЄТРИС", обязательно требуется наличие JavaScript !</H1>
+</NOSCRIPT>
+
+<DIV CLASS="mdiv" ID="field">
+<CANVAS ID="background" CLASS="can1" WIDTH=380 HEIGHT=240></CANVAS>
+<CANVAS ID="hdc" CLASS="can2" WIDTH=380 HEIGHT=240></CANVAS>
+</DIV>
+
+<DIV CLASS="pdiv" ID="direct">
+
+<TABLE CLASS="ctrl" ID="panel" COLS=1 ROWS=5>
+<TR><TD ID="next" CLASS="ptx" ALIGN="center" VALIGN="top" STYLE="color:#FFAA44">
+Наступні хуї<BR />
+<CANVAS ID="figure" CLASS="nfig"></CANVAS>
+</TD></TR>
+<TR><TD ALIGN="center" VALIGN="top" STYLE="color:#44DD52">
+<SPAN ID="level" CLASS="ptx"></SPAN><BR />
+<SPAN ID="lines" CLASS="ptx"></SPAN>
+</TD></TR>
+<TR><TD ALIGN="center">
+
+<TABLE CLASS="tp1" COLS=2 ROWS=3>
+<TR><TD COLSPAN=2 ALIGN="center">
+<IMG ID="rotate" SRC="" CLASS="but" />
+</TD></TR>
+<TR><TD ALIGN="right">
+<IMG ID="left" SRC="" CLASS="but" />
+</TD>
+<TD ALIGN="left">
+<IMG ID="right" SRC="" CLASS="but" />
+</TD></TR>
+<TR><TD COLSPAN=2 ALIGN="center">
+<IMG ID="down" SRC="" CLASS="but" />
+</TD></TR>
+</TABLE>
+
+</TD></TR>
+<TR><TD ID="pause" CLASS="sbar" ALIGN="center" VALIGN="middle" onclick="game.control_pause(this)">СТОП ХУЙ</TD></TR>
+<TR><TD ID="close" CLASS="sbar" ALIGN="center" VALIGN="middle" onclick="game.control_abort()">ЗАКІНЧИТИ ХУЯРИТИ</TD></TR>
+</TABLE>
+
+</DIV>
+
+</BODY>
+
+<SCRIPT LANGUAGE="javascript" SRC="script/util.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="script/app.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="script/game.js" TYPE="text/javascript" CHARSET="UTF-8"></SCRIPT>
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript" CHARSET="UTF-8">
+
+game.load();
+
+</SCRIPT>
+</HTML>
